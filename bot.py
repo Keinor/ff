@@ -21,7 +21,7 @@ def getMessage():
 
 @server.route("/")
 def webhook():
-    bot.remove_webhook()
+    
     bot.set_webhook(url="https://dashboard.heroku.com/apps/dry-journey-89822/bot")
     return "!", 200
 
