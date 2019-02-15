@@ -22,7 +22,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url="https://dashboard.heroku.com/apps/.../bot")
+    bot.set_webhook(url="https://dashboard.heroku.com/apps/afternoon-savannah-68479/bot")
     return "dna!", 200
 
 server.run(host="0.0.0.0", port=os.environ.get('PORT', 5000))
